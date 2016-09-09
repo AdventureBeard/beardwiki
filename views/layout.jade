@@ -1,0 +1,17 @@
+doctype
+html
+    head
+        title #{title} - My Site
+        link(href='css/app.css', rel='stylesheet')
+        link(href='css/bootstrap.css', rel='stylesheet')
+        script(src="/js/jquery-3.1.0.min.js")
+        script(src="/js/bootstrap.js")
+    body
+        .container
+            .jumbotron.jumbotron-fluid
+                block banner
+            .content-container
+                .notionlist
+                    block notions
+        footer
+            p Running on node with Express, Jade and Stylus

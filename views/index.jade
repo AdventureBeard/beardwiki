@@ -1,0 +1,14 @@
+extend layout
+
+block banner
+    .container
+        h1 BeardWiki
+        p A second brain since my first one sucks
+
+block notions
+    each notion in notions
+        .notion
+            h4 #{notion.title}
+            p #{notion.content}
+
+
